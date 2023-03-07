@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Timed Coding Assessment</h1>
+        <p id="quiz-description">--This assessment will help you test your knowledge of JavaScript fundamentals--</p>
+
+        <div class="quiz-container">
+            <button id="start-quiz">Start Quiz</button>
+            <button id="end-quiz">End Quiz</button>
+        </div>
+        <div id="timer-container">
+            <p id="time-remaining"></p>
+            <p id="timer-text"></p>
+        </div>
+        <div class="high-scores">
+            <p id="current-score">Current Score: </p>
+            <p id="score-value"></p>
+            <p id="high-score-list">Previous Scores:</p>
+            <ul>
+                <li id="score-1"></li>
+                <li id="score-2"></li>
+                <li id="score-3"></li>
+                <li id="score-4"></li>
+                <li id="score-5"></li>
+            </ul>
+            
+        </div>
+        <div class="question1-container">
+            <p id="quiz-question"></p>
+            <input id="answer-1" type="submit" name="button" value="a. <js>" onclick="incorrectAnswer();"/>
+            <input id="answer-2" type="submit" name="button" value="b. <scripting>" onclick="incorrectAnswer();"/>
+            <input id="answer-3" type="submit" name="button" value="c. <javascript>" onclick="incorrectAnswer();"/>
+            <input id="answer-4" type="submit" name="button" value="d. <script>" onclick="correctAnswer(); question2();"/>
+            <p id="correct-incorrect"></p>
+        </div>
+        <div class="question2-container">
+            <p id="quiz-question"></p>
+            <input id="answer-5" type="submit" name="button" value="a. commas" onclick="incorrectAnswer();"/>
+            <input id="answer-6" type="submit" name="button" value="b. quotes" onclick="correctAnswer(); question3();"/>
+            <input id="answer-7" type="submit" name="button" value="c. parentheses" onclick="incorrectAnswer();"/>
+            <input id="answer-8" type="submit" name="button" value="d. curly brackets" onclick="incorrectAnswer();"/>
+            <p id="correct-incorrect"></p>
+        </div>
+        <div class="question3-container">
+            <p id="quiz-question"></p>
+            <input id="answer-9" type="submit" name="button" value="a. numbers" onclick="incorrectAnswer();"/>
+            <input id="answer-10" type="submit" name="button" value="b. booleans" onclick="incorrectAnswer();"/>
+            <input id="answer-11" type="submit" name="button" value="c. arrays" onclick="correctAnswer(); question4();"/>
+            <input id="answer-12" type="submit" name="button" value="d. all of the above" onclick="incorrectAnswer();"/>
+            <p id="correct-incorrect"></p>
+        </div>
+        <div class="question4-container">
+            <p id="quiz-question"></p>
+            <input id="answer-13" type="submit" name="button" value="a. alerts" onclick="correctAnswer(); question5();"/>
+            <input id="answer-14" type="submit" name="button" value="b. numbers" onclick="incorrectAnswer();"/>
+            <input id="answer-15" type="submit" name="button" value="c. strings" onclick="incorrectAnswer();"/>
+            <input id="answer-16" type="submit" name="button" value="d. booleans" onclick="incorrectAnswer();"/>
+            <p id="correct-incorrect"></p>
+        </div>
+        <div class="question5-container">
+            <p id="quiz-question"></p>
+            <input id="answer-17" type="submit" name="button" value="a. call myFunction()" onclick="incorrectAnswer();"/>
+            <input id="answer-18" type="submit" name="button" value="b. function: myFunction()" onclick="incorrectAnswer();"/>
+            <input id="answer-19" type="submit" name="button" value="c. function myFunction()" onclick="correctAnswer(); endTimer()";/>
+            <input id="answer-20" type="submit" name="button" value="d. 1-800-MY-FUNC" onclick="incorrectAnswer();"/>
+            <p id="correct-incorrect"></p>
+        </div>
+        
+    </main>
+    
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background-image: url(./images/sunsetBackground.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#quiz-description {
+    text-align: center;
+    font-size: 35px;
+}
+
+.question1-container {
+    text-align: center;
+    display: block;
+}
+
+#quiz-container {
+ text-align: center;
+}
+
+button {
+    font-size: 20px;
+}
+
+#timer-text, #time-remaining {
+    text-align: center;
+    font-size: 25px;
+}
+
+#end-quiz {
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#start-quiz {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.high-scores {
+    position: absolute;
+    top: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+#quiz-question {
+    justify-content: center;
+    
+    font-size: 40px;
+    display: none;
+}
+
+#answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7, #answer-8, #answer-9, #answer-10, #answer-11, #answer-12, #answer-13, #answer-14, #answer-15, #answer-16, #answer-17, #answer-18, #answer-19, #answer-20  {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 10px;
+}
+
+#correct-incorrect {
+    display: none;
+    font-size: 25px;
+    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.question2-container, .question3-container, .question4-container, .question5-container {
+    text-align: center;
+    display: none;
+}
+
+.current-score {
+    position: absolute;
+    /* left: 5%; */
+    top: 10%;
+    font-size: 30px;
+    color: white;
+}
+.score-value {
+    
+    position: absolute;
+    /* left: 5%; */
+    top: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
